@@ -3,6 +3,10 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
+    "start": "node dist/index.bundle.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "webpack":"webpack -d -w",
+    "heroku-postbuild": "webpack -d",
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint"
